@@ -1,0 +1,204 @@
+fileFormatVersion: 2
+guid: 19cefab94326bd84ea93ec48032fdc0e
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Antenna
+    100002: ArmL
+    100004: ArmR
+    100006: BottomLegL
+    100008: BottomLegR
+    100010: EyeL
+    100012: EyeR
+    100014: FootL
+    100016: FootR
+    100018: HandL
+    100020: HandR
+    100022: Head
+    100024: KneeL
+    100026: KneeR
+    100028: LegL
+    100030: LegR
+    100032: Light
+    100034: PupilL
+    100036: PupilR
+    100038: //RootNode
+    100040: ShoulderL
+    100042: ShoulderR
+    100044: Torso
+    400000: Antenna
+    400002: ArmL
+    400004: ArmR
+    400006: BottomLegL
+    400008: BottomLegR
+    400010: EyeL
+    400012: EyeR
+    400014: FootL
+    400016: FootR
+    400018: HandL
+    400020: HandR
+    400022: Head
+    400024: KneeL
+    400026: KneeR
+    400028: LegL
+    400030: LegR
+    400032: Light
+    400034: PupilL
+    400036: PupilR
+    400038: //RootNode
+    400040: ShoulderL
+    400042: ShoulderR
+    400044: Torso
+    2100000: RobotBody
+    2100002: EyeWhite
+    2100004: EyePupil
+    2100006: phong1
+    2300000: Antenna
+    2300002: ArmL
+    2300004: ArmR
+    2300006: BottomLegL
+    2300008: BottomLegR
+    2300010: EyeL
+    2300012: EyeR
+    2300014: FootL
+    2300016: FootR
+    2300018: HandL
+    2300020: HandR
+    2300022: Head
+    2300024: KneeL
+    2300026: KneeR
+    2300028: LegL
+    2300030: LegR
+    2300032: Light
+    2300034: PupilL
+    2300036: PupilR
+    2300038: ShoulderL
+    2300040: ShoulderR
+    2300042: Torso
+    3300000: Antenna
+    3300002: ArmL
+    3300004: ArmR
+    3300006: BottomLegL
+    3300008: BottomLegR
+    3300010: EyeL
+    3300012: EyeR
+    3300014: FootL
+    3300016: FootR
+    3300018: HandL
+    3300020: HandR
+    3300022: Head
+    3300024: KneeL
+    3300026: KneeR
+    3300028: LegL
+    3300030: LegR
+    3300032: Light
+    3300034: PupilL
+    3300036: PupilR
+    3300038: ShoulderL
+    3300040: ShoulderR
+    3300042: Torso
+    4300000: Torso
+    4300002: Head
+    4300004: EyeL
+    4300006: PupilL
+    4300008: EyeR
+    4300010: PupilR
+    4300012: Antenna
+    4300014: Light
+    4300016: ShoulderR
+    4300018: ArmR
+    4300020: HandR
+    4300022: ShoulderL
+    4300024: ArmL
+    4300026: HandL
+    4300028: LegR
+    4300030: KneeR
+    4300032: BottomLegR
+    4300034: FootR
+    4300036: LegL
+    4300038: KneeL
+    4300040: BottomLegL
+    4300042: FootL
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
