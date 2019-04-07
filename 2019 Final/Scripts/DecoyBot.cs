@@ -72,7 +72,7 @@ public class DecoyBot : MonoBehaviour
         if (decoybotTrigger == true && talkedToTheBot == false && Input.GetKeyDown(KeyCode.F))
         {
             //does not add to robot count
-            PlayerScoreFixRobot.playerscore += 2; // adds to player score
+            //PlayerScoreFixRobot.playerscore += 2; // adds to player score
             AudioSource.PlayClipAtPoint(happybeep, transform.position);
             // matFixed?
             talkedToTheBot = true; // says bot is fixed

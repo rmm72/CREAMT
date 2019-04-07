@@ -85,7 +85,7 @@ public class FixRobot : MonoBehaviour
         else if (fixbotTrigger == true && fixedTheBot == false && Input.GetKeyDown(KeyCode.F) && ItemInventory.gscore >= 1)
         {
             PlayerScoreFixRobot.robotCount += 1; // adds one of robots fixed number
-            PlayerScoreFixRobot.playerscore += 5; // adds to player score
+            //PlayerScoreFixRobot.playerscore += 5; // adds to player score
             AudioSource.PlayClipAtPoint(happybeep, transform.position);
             // matFixed?
             fixedTheBot = true; // says bot is fixed

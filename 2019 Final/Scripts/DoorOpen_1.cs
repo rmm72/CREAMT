@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DoorOpen_1 : MonoBehaviour
 {
-    //set to trigger volume
+    /*//set to trigger volume
     //tag FPS Controller as "Player"
 
     public GameObject speechBubble; //display in Canvas when in the trigger volume
@@ -73,7 +73,7 @@ public class DoorOpen_1 : MonoBehaviour
                 npcDialogue.SetActive(false); //if the dialogue is displayed, will also go away when player leaves the volume
                 speechBubble.GetComponent<Renderer>().material = matButton; // go back to first texture on Speech Bubble
             }
-        }*/
+        }
     }
 
     void Update()
@@ -100,5 +100,5 @@ public class DoorOpen_1 : MonoBehaviour
             Debug.Log("Locked"); // for testing
             nearDoor = false; // keeps you from pressing and hearing sound multiple times
         }
-    }
+    }*/
 }

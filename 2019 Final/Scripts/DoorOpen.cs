@@ -13,6 +13,7 @@ public class DoorOpen : MonoBehaviour
     //public AudioClip hey; //sound for near door
     public AudioClip doorSound; // sound for door
     public GameObject door; //the door object
+    //public GameObject ceiling;
     //public GameObject npcDialogue; // the dialogue as Canvas text (can be an empty with UI background image and text or just the text)
     bool open = false; // says if door has been opened
     bool nearDoor = false; // says if near door
@@ -21,6 +22,7 @@ public class DoorOpen : MonoBehaviour
     {
         speechBubble.SetActive(false);
         door.SetActive(true);
+        //ceiling.SetActive(true);
     }
 
     public void OnTriggerEnter(Collider collision)
@@ -56,9 +58,10 @@ public class DoorOpen : MonoBehaviour
             open = true; // says door is open
             speechBubble.SetActive(false); // destroys this so won't display again
             //door.GetComponent<Animator>().SetBool("Open", true); // tells door to do talking animation if necessary
-            Destroy(door);
+            door.SetActive(false);
             Debug.Log("Open"); // for testing
             nearDoor = false; // keeps you from pressing and hearing sound multiple times
+            //ceiling.SetActive(false);
         }
     }
 }

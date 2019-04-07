@@ -1,0 +1,245 @@
+fileFormatVersion: 2
+guid: 432680f185fb15d4d893ec9e893e0962
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Antenna
+    100002: Antenna 1
+    100004: ArmL
+    100006: ArmR
+    100008: Bottom
+    100010: BottomLegL
+    100012: BottomLegR
+    100014: Eye
+    100016: EyeL
+    100018: EyeR
+    100020: FootL
+    100022: FootR
+    100024: HandL
+    100026: HandR
+    100028: Head
+    100030: Head 1
+    100032: KneeL
+    100034: KneeR
+    100036: LegL
+    100038: LegR
+    100040: Light
+    100042: Light 1
+    100044: Midbody
+    100046: Pupil
+    100048: PupilL
+    100050: PupilR
+    100052: Robot1
+    100054: Robot2
+    100056: //RootNode
+    100058: ShoulderL
+    100060: ShoulderR
+    100062: Torso
+    400000: Antenna
+    400002: Antenna 1
+    400004: ArmL
+    400006: ArmR
+    400008: Bottom
+    400010: BottomLegL
+    400012: BottomLegR
+    400014: Eye
+    400016: EyeL
+    400018: EyeR
+    400020: FootL
+    400022: FootR
+    400024: HandL
+    400026: HandR
+    400028: Head
+    400030: Head 1
+    400032: KneeL
+    400034: KneeR
+    400036: LegL
+    400038: LegR
+    400040: Light
+    400042: Light 1
+    400044: Midbody
+    400046: Pupil
+    400048: PupilL
+    400050: PupilR
+    400052: Robot1
+    400054: Robot2
+    400056: //RootNode
+    400058: ShoulderL
+    400060: ShoulderR
+    400062: Torso
+    2100000: RobotBody
+    2100002: EyeWhite
+    2100004: EyePupil
+    2100006: phong1
+    2100008: RobotBody2
+    2100010: phong2
+    2300000: Antenna
+    2300002: Antenna 1
+    2300004: ArmL
+    2300006: ArmR
+    2300008: Bottom
+    2300010: BottomLegL
+    2300012: BottomLegR
+    2300014: Eye
+    2300016: EyeL
+    2300018: EyeR
+    2300020: FootL
+    2300022: FootR
+    2300024: HandL
+    2300026: HandR
+    2300028: Head
+    2300030: Head 1
+    2300032: KneeL
+    2300034: KneeR
+    2300036: LegL
+    2300038: LegR
+    2300040: Light
+    2300042: Light 1
+    2300044: Midbody
+    2300046: Pupil
+    2300048: PupilL
+    2300050: PupilR
+    2300052: ShoulderL
+    2300054: ShoulderR
+    2300056: Torso
+    3300000: Antenna
+    3300002: Antenna 1
+    3300004: ArmL
+    3300006: ArmR
+    3300008: Bottom
+    3300010: BottomLegL
+    3300012: BottomLegR
+    3300014: Eye
+    3300016: EyeL
+    3300018: EyeR
+    3300020: FootL
+    3300022: FootR
+    3300024: HandL
+    3300026: HandR
+    3300028: Head
+    3300030: Head 1
+    3300032: KneeL
+    3300034: KneeR
+    3300036: LegL
+    3300038: LegR
+    3300040: Light
+    3300042: Light 1
+    3300044: Midbody
+    3300046: Pupil
+    3300048: PupilL
+    3300050: PupilR
+    3300052: ShoulderL
+    3300054: ShoulderR
+    3300056: Torso
+    4300000: Torso
+    4300002: Head
+    4300004: EyeL
+    4300006: PupilL
+    4300008: EyeR
+    4300010: PupilR
+    4300012: Antenna
+    4300014: Light
+    4300016: ShoulderR
+    4300018: ArmR
+    4300020: HandR
+    4300022: ShoulderL
+    4300024: ArmL
+    4300026: HandL
+    4300028: LegR
+    4300030: KneeR
+    4300032: BottomLegR
+    4300034: FootR
+    4300036: LegL
+    4300038: KneeL
+    4300040: BottomLegL
+    4300042: FootL
+    4300044: Head
+    4300046: Eye
+    4300048: Pupil
+    4300050: Antenna
+    4300052: Light
+    4300054: Midbody
+    4300056: Bottom
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

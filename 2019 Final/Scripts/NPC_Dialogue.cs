@@ -14,13 +14,18 @@ public class NPC_Dialogue : MonoBehaviour
     public AudioClip hey; //sound for robot noticing you and button is displayed
     public AudioClip dialogue; // sound for robot dialogue
     public GameObject npc; //the NPC
-    public GameObject npcDialogue; // the dialogue as Canvas text (can be an empty with UI background image and text or just the text)
+    //public GameObject npcDialogue; // the dialogue as Canvas text (can be an empty with UI background image and text or just the text)
+    public GameObject npcJoke;
+    public GameObject npcHint;
     bool displayed = false; // says if dialogue has been displayed
     bool noticed = false; // says if NPC noticed you
+    bool spoke = false;
 
     void Start()
     {
         speechBubble.SetActive(false);
+        npcJoke.SetActive(false);
+        npcHint.SetActive(false);
     }
 
     public void OnTriggerEnter(Collider collision)
@@ -32,6 +37,7 @@ public class NPC_Dialogue : MonoBehaviour
             //npc.GetComponent<Animator>().SetBool("Noticed", true); // tells NPC animator to do noticing player animation if necessary
             Debug.Log("Noticed"); // for testing
             noticed = true; // says NPC noticed you
+            spoke = false;
         } else {
                 //npc.GetComponent<Animator>().SetBool("Talking", false); // tells NPC animator it is not talking
                 Debug.Log("NotTalking");
@@ -44,24 +50,56 @@ public class NPC_Dialogue : MonoBehaviour
         {
             speechBubble.SetActive(false); // speechBubble goes away
             noticed = false;
+            //spoke = true;
             if (displayed == true){ // if it is displayed
-                npcDialogue.SetActive(false); //if the dialogue is displayed, will also go away when player leaves the volume
+                //npcDialogue.SetActive(false); //if the dialogue is displayed, will also go away when player leaves the volume
+                npcJoke.SetActive(false);
+                npcHint.SetActive(false);
                 //speechBubble.GetComponent<Renderer>().material = matButton; // go back to first texture on Speech Bubble
             }
         }
     }
 
     void Update(){
-        if (Input.GetButtonDown("Fire1") && noticed == true) // if press button and NPC noticed you
+        if (Input.GetButtonDown("Fire1") && noticed == true && spoke == false) // if press button and NPC noticed you
         { //if the player presses the mouse button (or replace with desired key or button)
             //speechBubble.GetComponent<Renderer>().material = matTalking;
             speechBubble.SetActive(false);
-            npcDialogue.SetActive(true); // display the dialogue
+            //npcDialogue.SetActive(true); // display the dialogue bubble
+            npcJoke.SetActive(true);
+            npcHint.SetActive(false);
+            AudioSource.PlayClipAtPoint(dialogue, transform.position); // play NPC dialogue
+            displayed = true; // says it is displayed
+            //npc.GetComponent<Animator>().SetBool("Talking", true); // tells NPC to do talking animation if necessary
+            Debug.Log("Talking"); // for testing
+            spoke = true;
+        }
+        else if (Input.GetButtonDown("Fire2") && noticed == true && spoke == true) // if press button and NPC noticed you
+        { //if the player presses the mouse button (or replace with desired key or button)
+          //speechBubble.GetComponent<Renderer>().material = matTalking;
+            speechBubble.SetActive(false);
+            //npcDialogue.SetActive(true); // display the dialogue bubble
+            npcJoke.SetActive(false);
+            npcHint.SetActive(true);
+            displayed = true; // says it is displayed
+                              //npc.GetComponent<Animator>().SetBool("Talking", true); // tells NPC to do talking animation if necessary
+            Debug.Log("Talking"); // for testing
+            noticed = false; // keeps you from pressing and hearing sound multiple times
+            spoke = false;
+        }
+        /*if (Input.GetButtonDown("Fire1") && noticed == true && spoke == true) // if press button and NPC noticed you
+        { //if the player presses the mouse button (or replace with desired key or button)
+            //speechBubble.GetComponent<Renderer>().material = matTalking;
+            speechBubble.SetActive(false);
+            //npcDialogue.SetActive(true); // display the dialogue bubble
+            npcJoke.SetActive(false);
+            npcHint.SetActive(true);
             AudioSource.PlayClipAtPoint(dialogue, transform.position); // play NPC dialogue
             displayed = true; // says it is displayed
             //npc.GetComponent<Animator>().SetBool("Talking", true); // tells NPC to do talking animation if necessary
             Debug.Log("Talking"); // for testing
             noticed = false; // keeps you from pressing and hearing sound multiple times
-        }
+            spoke = false;
+        }*/
     }
 }
