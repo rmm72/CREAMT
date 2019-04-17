@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 114820791115717246}
   m_Layer: 0
   m_Name: Floppy_Disk 1
-  m_TagString: Untagged
+  m_TagString: Item1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,6 +73,22 @@ GameObject:
   - component: {fileID: 23692934482890884}
   m_Layer: 0
   m_Name: pCube6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1566011839594750
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4912509686732526}
+  - component: {fileID: 108935879862352120}
+  m_Layer: 0
+  m_Name: ItemLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -201,7 +217,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1317409674974110}
   m_LocalRotation: {x: 0.08371879, y: 0.47075537, z: 0.15378031, w: 0.86471516}
-  m_LocalPosition: {x: -2.72, y: 89.898, z: 71.01}
+  m_LocalPosition: {x: 63.09, y: 90.87, z: -30.02}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children:
   - {fileID: 4229268394576266}
@@ -210,9 +226,23 @@ Transform:
   - {fileID: 4224206927356654}
   - {fileID: 4959031938950300}
   - {fileID: 4594772361420616}
+  - {fileID: 4912509686732526}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 57.128002, z: 20.168001}
+--- !u!4 &4912509686732526
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1566011839594750}
+  m_LocalRotation: {x: -0.08371879, y: -0.47075537, z: -0.15378031, w: 0.86471516}
+  m_LocalPosition: {x: 0.0034204775, y: 0.02015662, z: -0.0008108037}
+  m_LocalScale: {x: 0.050000004, y: 0.049999997, z: 0.050000004}
+  m_Children: []
+  m_Father: {fileID: 4802326856001286}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4959031938950300
 Transform:
   m_ObjectHideFlags: 1
@@ -436,6 +466,43 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1940443750872634}
   m_Mesh: {fileID: 4300000, guid: 20459798d5c612749863987e030dc4a6, type: 3}
+--- !u!108 &108935879862352120
+Light:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1566011839594750}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 2
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1.5
+  m_Range: 8
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!114 &114533285635470864
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -448,7 +515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickupBubble: {fileID: 0}
-  itemSound: {fileID: 8300000, guid: 3f7dfb1aded69a64ba0a2f4cb46554e4, type: 3}
+  itemSound: {fileID: 8300000, guid: f18af767fb577f345800b23f54260516, type: 3}
   item: {fileID: 1317409674974110}
 --- !u!114 &114820791115717246
 MonoBehaviour:
@@ -474,5 +541,5 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.8
   m_Center: {x: 0, y: 0, z: 0}

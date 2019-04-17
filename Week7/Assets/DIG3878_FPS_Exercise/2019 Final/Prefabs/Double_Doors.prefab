@@ -71,7 +71,7 @@ GameObject:
   - component: {fileID: 4995561204934434}
   - component: {fileID: 65373680233452522}
   m_Layer: 0
-  m_Name: DoorCollider
+  m_Name: DoorCollider_Lvl1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111,6 +111,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1986171021272128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4478710539693914}
+  - component: {fileID: 108958684686768652}
+  m_Layer: 0
+  m_Name: DD_SpotLight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &4207989785261192
 Transform:
   m_ObjectHideFlags: 1
@@ -124,6 +140,19 @@ Transform:
   m_Father: {fileID: 4718281878478914}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4478710539693914
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1986171021272128}
+  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: 0.00013499975, y: 0.03295713, z: 0.0002013016}
+  m_LocalScale: {x: 0.0050000004, y: 0.005000002, z: 0.0047619063}
+  m_Children: []
+  m_Father: {fileID: 4718281878478914}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!4 &4526023526268880
 Transform:
   m_ObjectHideFlags: 1
@@ -170,7 +199,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1243180048359368}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 67.59, y: 89.08, z: 20.11}
+  m_LocalPosition: {x: 63.209, y: 89.079, z: 5.097}
   m_LocalScale: {x: 200, y: 210, z: 200}
   m_Children:
   - {fileID: 4526023526268880}
@@ -178,6 +207,7 @@ Transform:
   - {fileID: 4207989785261192}
   - {fileID: 4562327073086558}
   - {fileID: 4995561204934434}
+  - {fileID: 4478710539693914}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -330,8 +360,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.3859327, y: 5.4300923, z: 6.5532117}
-  m_Center: {x: -1.6305194, y: 0.21950153, z: -0.22310168}
+  m_Size: {x: 1.7613221, y: 5.4300923, z: 6.5532117}
+  m_Center: {x: -1.9428246, y: 0.21950153, z: -0.22310168}
 --- !u!65 &65373680233452522
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -362,6 +392,43 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!108 &108958684686768652
+Light:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1986171021272128}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 0.4764151, b: 0.4764151, a: 1}
+  m_Intensity: 11
+  m_Range: 8.8
+  m_SpotAngle: 61.5
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!114 &114706890645701468
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -375,12 +442,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speechBubble: {fileID: 0}
   lockedBubble: {fileID: 0}
-  doorSound: {fileID: 8300000, guid: 407ae2714afa6284bbceaae9354bf12d, type: 3}
+  doorSound: {fileID: 8300000, guid: d56aa30b14b5d1044bc5c0bf39589cdc, type: 3}
   lockedSound: {fileID: 8300000, guid: 6d09ff325a4af91408d02c6fc18533de, type: 3}
-  door: {fileID: 1243180048359368}
+  door: {fileID: 95539510641517896}
   doorCollider: {fileID: 1319263227460172}
   interfaceSprite: {fileID: 0}
-  wrongInput: {fileID: 0}
-  key1Text: {fileID: 0}
-  key2Text: {fileID: 0}
-  key3Text: {fileID: 0}
+  keypadInst: {fileID: 0}

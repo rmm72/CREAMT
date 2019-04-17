@@ -13,14 +13,15 @@ public class DoorOpen_KeypadA : MonoBehaviour
 
     public AudioClip doorSound; // sound for door
     public AudioClip lockedSound;
-    public GameObject door; //the door object
+    public Animator door; //the door object
     public GameObject doorCollider;
     //public GameObject npcDialogue; // the dialogue as Canvas text (can be an empty with UI background image and text or just the text)
-    bool open = false; // says if door has been opened
-    public static bool nearDoor = false; // says if near door
+    bool openDD = false; // says if door has been opened
+    public static bool nearDDoor = false; // says if near door
 
     public GameObject interfaceSprite; //if you want to display an interface, probably like a screen so player doesn't think they can press UI buttons
     public static bool interfaceOff = true;
+    public GameObject keypadInst;
     //public GameObject wrongInput; // says you put in wrong input
     //public GameObject key1Text; // will be the correct key (not automatically generated)
     //public GameObject key2Text; // will be the correct key (not automatically generated)
@@ -35,25 +36,27 @@ public class DoorOpen_KeypadA : MonoBehaviour
         speechBubble.SetActive(false);
         interfaceSprite.SetActive(false);
         doorCollider.SetActive(true);
+        lockedBubble.SetActive(false);
+        keypadInst.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     public void OnTriggerEnter(Collider collision)
     {
-        if (collision.CompareTag("Player") && open == false && PlayerScoreFixRobot.doorUnlocked == true) // only works after getting close, hasn't been opened, and robots fixed
+        if (collision.CompareTag("Player") && openDD == false && PlayerScoreFixRobot.doorUnlocked == true) // only works after getting close, hasn't been opened, and robots fixed
         {
             speechBubble.SetActive(true); // tells player to press the buttons 
             Debug.Log("Near Door1"); // for testing
-            nearDoor = true; // says door display on
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-            interfaceSprite.SetActive(true);
+            nearDDoor = true; // says door display on
+            lockedBubble.SetActive(false);
         }
-        else if (collision.CompareTag("Player") && open == false && PlayerScoreFixRobot.doorUnlocked == false) // locked
+        else if (collision.CompareTag("Player") && openDD == false && PlayerScoreFixRobot.doorUnlocked == false) // locked
         {
             speechBubble.SetActive(true); // displays click to interact but will say door is locked
             Debug.Log("Near Door2"); // for testing
-            nearDoor = true; // says door display on
+            nearDDoor = true; // says door display on
+            lockedBubble.SetActive(false);
         }
         //else if (collision.CompareTag("Player") && open == true && PlayerScoreFixRobot.doorUnlocked == true)
         //{
@@ -79,16 +82,19 @@ public class DoorOpen_KeypadA : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player") // if you are leaving robot trigger volume -- non-decoy bot
         {
-            nearDoor = false; // not in volume
+            nearDDoor = false; // not in volume
             speechBubble.SetActive(false);
             PlayerScoreFixRobot.doorText = false;
             Debug.Log("left door end volume");
-            if (open == false && PlayerScoreFixRobot.doorUnlocked == false)
+            if (openDD == false && PlayerScoreFixRobot.doorUnlocked == false)
             {
                 lockedBubble.SetActive(false);
             }
             interfaceOff = true;
             interfaceSprite.SetActive(false);
+            keypadInst.SetActive(false);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
             //key1Text.SetActive(false);
             //key2Text.SetActive(false);
             //key3Text.SetActive(false);
@@ -116,21 +122,25 @@ public class DoorOpen_KeypadA : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1") && nearDoor == true && open == false && PlayerScoreFixRobot.doorUnlocked == true && interfaceOff == true)
+        if (Input.GetButtonDown("Fire1") && nearDDoor == true && openDD == false && PlayerScoreFixRobot.doorUnlocked == true && interfaceOff == true)
         { //if unlocked now have to press right keys
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             interfaceSprite.SetActive(true); // this pops up and tells the player to press the buttons
+            keypadInst.SetActive(true);
             interfaceOff = false; // keeps you from pressing multiple times
             speechBubble.SetActive(false);
+            lockedBubble.SetActive(false);
             Debug.Log("Interface on");
             }
-        else if (Input.GetButtonDown("Fire1") && nearDoor == true && open == false && PlayerScoreFixRobot.doorUnlocked == false)
+        else if (Input.GetButtonDown("Fire1") && nearDDoor == true && openDD == false && PlayerScoreFixRobot.doorUnlocked == false)
         { //if the player presses the mouse button but door is locked
             AudioSource.PlayClipAtPoint(lockedSound, transform.position); // play NPC dialogue
-            open = false; // says door is locked
+            openDD = false; // says door is locked
             speechBubble.SetActive(false);
             lockedBubble.SetActive(true);
             Debug.Log("Locked"); // for testing
-            nearDoor = false; // keeps you from pressing and hearing sound multiple times
+            nearDDoor = false; // keeps you from pressing and hearing sound multiple times
         }
         /*if (Input.GetKeyDown(KeyCode.P) && nearDoor == true && open == false && PlayerScoreFixRobot.doorUnlocked == true && interfaceOff == false)
         {
@@ -168,7 +178,7 @@ public class DoorOpen_KeypadA : MonoBehaviour
     public void Animation()
     {
         Debug.Log("Animation works!");
-        door.gameObject.GetComponent<Animator>().SetBool("Open", true); // tells door to do animation
+        door.SetBool("Open", true); // tells door to do animation
         doorCollider.SetActive(false);
     }
 }

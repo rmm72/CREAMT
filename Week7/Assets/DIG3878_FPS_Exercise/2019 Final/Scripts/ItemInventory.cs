@@ -39,19 +39,25 @@ public class ItemInventory : MonoBehaviour {
         }
         else if (gscore == 2)
         {
-            item2.SetActive(true);
+            item1.SetActive(true);
             item2.SetActive(true);
             item3.SetActive(false);
             item4.SetActive(false);
         }
         else if (gscore == 3)
         {
+            item1.SetActive(true);
+            item2.SetActive(true);
             item3.SetActive(true);
+            item4.SetActive(false);
+        }
+        else if (gscore == 4)
+        {
+            item1.SetActive(true);
             item2.SetActive(true);
             item3.SetActive(true);
             item4.SetActive(true);
         }
-
     }
 
 }

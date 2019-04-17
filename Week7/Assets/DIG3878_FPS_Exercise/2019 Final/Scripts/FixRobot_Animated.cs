@@ -110,7 +110,7 @@ public class FixRobot_Animated : MonoBehaviour
             GetComponent<Animator>().SetBool("Fixed", true); // tells the animator controller that the bool is true and to switch animations
             Debug.Log("Fixed true");
             Debug.Log("Fixed");
-            //Destroy(sparks); // will destroy the sparks
+            Destroy(sparks); // will destroy the sparks
         }
     }
 }

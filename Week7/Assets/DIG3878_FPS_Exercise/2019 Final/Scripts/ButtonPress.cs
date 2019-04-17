@@ -6,16 +6,12 @@ using UnityEngine.UI;
 public class ButtonPress : MonoBehaviour
 {
     //public varaibles
-    [Header ("Basic Code Setup")]
-    public int currentDoorCode = 0;
-    [Header ("Door Codes")]
-    public List<int> DoorCodes;
     [Header("Keypad Reset Timer")]
     public float delay;
     [Header("Code Entered")]
     public Text codeDisplay;
     private string codeString;
-    public GameObject mainDoor;
+    public DoorOpen_KeypadA mainDoor;
 
     //Public property for the code string
     public string Code
@@ -51,33 +47,6 @@ public class ButtonPress : MonoBehaviour
     }
 
     //Function to check codes
-    private void CompareCodesBasic()
-    {
-        //Compare both code strings
-        if (myCode == DoorCodes[currentDoorCode])
-        {
-            //If correct display
-            Debug.Log("Correct Code!!!");
-            //clear the code string entered
-            Code = "Correct";
-
-            //Cursor.visible = false;
-            //Do Stuff
-            //turn keypad off
-            //unlock or set door inactive
-            //play music tones
-            //whatever the heck you want
-        }
-        else
-        {
-            //If incorrect display
-            Debug.Log("Incorrect Code!!!");
-            //clear the code string entered
-            Code = "Incorrect";
-            //Start timer to reset display
-            StartCoroutine(keypadResetTimer(delay));
-        }
-    }
 
     //Function to check codes using scriptable object
     private void CompareCodesAdvanced()
@@ -88,8 +57,12 @@ public class ButtonPress : MonoBehaviour
             //If correct display
             Debug.Log("Correct Code!!!");
             Code = "Correct";
+            Cursor.visible = false;
             Debug.Log("Calling Animation");
-            mainDoor.GetComponent<DoorOpen_KeypadA>().Animation();
+            mainDoor.Animation();
+            Destroy(mainDoor.interfaceSprite);
+            mainDoor.keypadInst.SetActive(false);
+            Cursor.lockState = CursorLockMode.Locked;
             //Cursor.visible = false;
             //DoorOpen_KeypadA.interfaceOff = true;
             //Do Stuff
@@ -124,7 +97,7 @@ public class ButtonPress : MonoBehaviour
         myCode = int.Parse(Code);
 
         //Run CompareCodesBasic function
-        CompareCodesBasic();
+        CompareCodesAdvanced();
 
         ////Run CompareCodesAdvanced function
         //CompareCodesAdvanced();

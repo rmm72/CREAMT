@@ -38,6 +38,7 @@ public class NPC_Dialogue : MonoBehaviour
             Debug.Log("Noticed"); // for testing
             noticed = true; // says NPC noticed you
             spoke = false;
+            //PlayerScoreFixRobot.winLevelText.SetActive(false);
         } else {
                 //npc.GetComponent<Animator>().SetBool("Talking", false); // tells NPC animator it is not talking
                 Debug.Log("NotTalking");
@@ -55,6 +56,7 @@ public class NPC_Dialogue : MonoBehaviour
                 //npcDialogue.SetActive(false); //if the dialogue is displayed, will also go away when player leaves the volume
                 npcJoke.SetActive(false);
                 npcHint.SetActive(false);
+                //PlayerScoreFixRobot.winLevelText.SetActive(true);
                 //speechBubble.GetComponent<Renderer>().material = matButton; // go back to first texture on Speech Bubble
             }
         }
