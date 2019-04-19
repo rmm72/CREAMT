@@ -3218,6 +3218,11 @@ Prefab:
       propertyPath: pickupBubble
       value: 
       objectReference: {fileID: 1991667641}
+    - target: {fileID: 114701268186694610, guid: 6cff06a1912154d4a93cbcb150eaea59,
+        type: 2}
+      propertyPath: pickupBubble
+      value: 
+      objectReference: {fileID: 1991667641}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6cff06a1912154d4a93cbcb150eaea59, type: 2}
   m_IsPrefabAsset: 0
@@ -11901,6 +11906,11 @@ Prefab:
       propertyPath: pickupBubble
       value: 
       objectReference: {fileID: 1991667641}
+    - target: {fileID: 114549903800737470, guid: b3512d4208ffe554f80baa36cefcc640,
+        type: 2}
+      propertyPath: pickupBubble
+      value: 
+      objectReference: {fileID: 1991667641}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3512d4208ffe554f80baa36cefcc640, type: 2}
   m_IsPrefabAsset: 0
@@ -12172,15 +12182,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114741030126202124, guid: 3e50eb2d663b9714686c71868caf870e,
+        type: 2}
+      propertyPath: pickupBubble
+      value: 
+      objectReference: {fileID: 1991667641}
     - target: {fileID: 114430942401303790, guid: 3e50eb2d663b9714686c71868caf870e,
         type: 2}
       propertyPath: pickupBubble
       value: 
       objectReference: {fileID: 1991667641}
-    - target: {fileID: 4543866917593770, guid: 3e50eb2d663b9714686c71868caf870e, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -21
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e50eb2d663b9714686c71868caf870e, type: 2}
   m_IsPrefabAsset: 0

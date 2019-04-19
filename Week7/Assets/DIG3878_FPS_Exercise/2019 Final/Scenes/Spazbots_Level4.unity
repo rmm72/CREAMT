@@ -2280,7 +2280,7 @@ Prefab:
     - target: {fileID: 224084571141601012, guid: 5dd4c09a72bb66f4d90eb85dcd93ab5c,
         type: 2}
       propertyPath: m_RootOrder
-      value: 24
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 114684183964433248, guid: 5dd4c09a72bb66f4d90eb85dcd93ab5c,
         type: 2}
@@ -5211,8 +5211,8 @@ RectTransform:
   - {fileID: 2099845966}
   - {fileID: 228114489}
   - {fileID: 302843433}
-  - {fileID: 244504258}
   - {fileID: 891767666}
+  - {fileID: 244504258}
   - {fileID: 523394853}
   - {fileID: 1026489870}
   - {fileID: 1941767853}
@@ -7663,6 +7663,11 @@ Prefab:
       propertyPath: pickupBubble
       value: 
       objectReference: {fileID: 918348077}
+    - target: {fileID: 114701268186694610, guid: 6cff06a1912154d4a93cbcb150eaea59,
+        type: 2}
+      propertyPath: pickupBubble
+      value: 
+      objectReference: {fileID: 918348077}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6cff06a1912154d4a93cbcb150eaea59, type: 2}
   m_IsPrefabAsset: 0
@@ -7697,7 +7702,7 @@ RectTransform:
   - {fileID: 1857959584}
   - {fileID: 1677237948}
   m_Father: {fileID: 578163665}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8420,6 +8425,11 @@ Prefab:
       propertyPath: m_TagString
       value: Item4
       objectReference: {fileID: 0}
+    - target: {fileID: 114549903800737470, guid: b3512d4208ffe554f80baa36cefcc640,
+        type: 2}
+      propertyPath: pickupBubble
+      value: 
+      objectReference: {fileID: 918348077}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3512d4208ffe554f80baa36cefcc640, type: 2}
   m_IsPrefabAsset: 0
@@ -9009,6 +9019,11 @@ Prefab:
       value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 114430942401303790, guid: 3e50eb2d663b9714686c71868caf870e,
+        type: 2}
+      propertyPath: pickupBubble
+      value: 
+      objectReference: {fileID: 918348077}
+    - target: {fileID: 114741030126202124, guid: 3e50eb2d663b9714686c71868caf870e,
         type: 2}
       propertyPath: pickupBubble
       value: 
@@ -9620,6 +9635,11 @@ Prefab:
       propertyPath: item
       value: 
       objectReference: {fileID: 1100435568}
+    - target: {fileID: 114549903800737470, guid: b3512d4208ffe554f80baa36cefcc640,
+        type: 2}
+      propertyPath: pickupBubble
+      value: 
+      objectReference: {fileID: 918348077}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3512d4208ffe554f80baa36cefcc640, type: 2}
   m_IsPrefabAsset: 0

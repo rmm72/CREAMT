@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33973648142508658}
   - component: {fileID: 23789714993764358}
   - component: {fileID: 114450286006598410}
+  - component: {fileID: 114741030126202124}
   m_Layer: 0
   m_Name: Bolt_Export
   m_TagString: Item3
@@ -94,15 +95,15 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1195790181869598}
-  m_LocalRotation: {x: -0, y: -0, z: 0.35561207, w: 0.9346337}
-  m_LocalPosition: {x: 74.10935, y: 91.5, z: -24.500193}
+  m_LocalRotation: {x: 0, y: 0, z: -0.18223555, w: 0.9832549}
+  m_LocalPosition: {x: -1, y: 90, z: -65.5}
   m_LocalScale: {x: 0.019789, y: 0.019789, z: 0.019789}
   m_Children:
   - {fileID: 4013545640009280}
   - {fileID: 4261391362708306}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 41.662003}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -21}
 --- !u!23 &23789714993764358
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -210,6 +211,20 @@ MonoBehaviour:
   degreesPerSecond: 15
   amplitude: 0.5
   frequency: 1
+--- !u!114 &114741030126202124
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1195790181869598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bed6e5bcf457bff4c8500eab9a6e69d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickupBubble: {fileID: 0}
+  itemSound: {fileID: 8300000, guid: f18af767fb577f345800b23f54260516, type: 3}
+  item: {fileID: 1195790181869598}
 --- !u!135 &135435823482721834
 SphereCollider:
   m_ObjectHideFlags: 1

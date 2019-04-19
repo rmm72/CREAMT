@@ -308,6 +308,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 114549903800737470, guid: b3512d4208ffe554f80baa36cefcc640,
+        type: 2}
+      propertyPath: pickupBubble
+      value: 
+      objectReference: {fileID: 1850783989}
     - target: {fileID: 114533285635470864, guid: b3512d4208ffe554f80baa36cefcc640,
         type: 2}
       propertyPath: pickupBubble
