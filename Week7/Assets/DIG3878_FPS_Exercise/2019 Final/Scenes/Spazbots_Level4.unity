@@ -434,7 +434,7 @@ Prefab:
         type: 2}
       propertyPath: robotbeep
       value: 
-      objectReference: {fileID: 8300000, guid: 18ab0533b13131a41a451c1bc2450de1, type: 3}
+      objectReference: {fileID: 8300000, guid: 4833576b2c7ecbc41823604b87bdacb5, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5c14ad3052ff3b4baf9877ad776649a, type: 2}
   m_IsPrefabAsset: 0

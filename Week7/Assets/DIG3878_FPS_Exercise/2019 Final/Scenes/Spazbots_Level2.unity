@@ -10320,16 +10320,6 @@ Prefab:
       propertyPath: findItem
       value: 
       objectReference: {fileID: 2096669198}
-    - target: {fileID: 114852588701934502, guid: f5c14ad3052ff3b4baf9877ad776649a,
-        type: 2}
-      propertyPath: robotbeep
-      value: 
-      objectReference: {fileID: 8300000, guid: 18ab0533b13131a41a451c1bc2450de1, type: 3}
-    - target: {fileID: 114852588701934502, guid: f5c14ad3052ff3b4baf9877ad776649a,
-        type: 2}
-      propertyPath: happybeep
-      value: 
-      objectReference: {fileID: 8300000, guid: d139795c0ea45694eab48878d3508d92, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5c14ad3052ff3b4baf9877ad776649a, type: 2}
   m_IsPrefabAsset: 0

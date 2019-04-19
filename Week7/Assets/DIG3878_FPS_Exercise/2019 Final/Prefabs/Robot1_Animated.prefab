@@ -678,8 +678,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1527088004990984}
-  m_LocalRotation: {x: -0, y: 0.39829674, z: -0, w: 0.9172566}
-  m_LocalPosition: {x: 70.42, y: 90.87, z: -42.59}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 34.68, y: 90.03, z: 63.47}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4851319608969162}
@@ -1849,8 +1849,8 @@ MonoBehaviour:
   fixText: {fileID: 0}
   findItem: {fileID: 0}
   sparks: {fileID: 1065833546797124}
-  robotbeep: {fileID: 8300000, guid: f5335f6d076e9df4886d32f22852d38f, type: 3}
-  happybeep: {fileID: 8300000, guid: d139795c0ea45694eab48878d3508d92, type: 3}
+  robotbeep: {fileID: 8300000, guid: d2b26c6abf741c14cb84694fb83292e3, type: 3}
+  happybeep: {fileID: 8300000, guid: e7407245f7be23c408a6f090ba0b06e6, type: 3}
 --- !u!135 &135002517384433060
 SphereCollider:
   m_ObjectHideFlags: 1

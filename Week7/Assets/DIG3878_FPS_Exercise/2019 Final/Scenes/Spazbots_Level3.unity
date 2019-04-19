@@ -1227,7 +1227,7 @@ Prefab:
         type: 2}
       propertyPath: robotbeep
       value: 
-      objectReference: {fileID: 8300000, guid: f5335f6d076e9df4886d32f22852d38f, type: 3}
+      objectReference: {fileID: 8300000, guid: 4833576b2c7ecbc41823604b87bdacb5, type: 3}
     - target: {fileID: 114852588701934502, guid: f5c14ad3052ff3b4baf9877ad776649a,
         type: 2}
       propertyPath: happybeep
@@ -2400,6 +2400,11 @@ Prefab:
       propertyPath: m_Name
       value: Robot829
       objectReference: {fileID: 0}
+    - target: {fileID: 114869223403716822, guid: bed4e770453a64744ad3c4868e6670be,
+        type: 2}
+      propertyPath: robotbeep
+      value: 
+      objectReference: {fileID: 8300000, guid: 4833576b2c7ecbc41823604b87bdacb5, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bed4e770453a64744ad3c4868e6670be, type: 2}
   m_IsPrefabAsset: 0
